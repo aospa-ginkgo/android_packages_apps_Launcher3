@@ -37,6 +37,7 @@ import com.android.launcher3.util.DisplayController;
 import com.android.launcher3.util.MultiPropertyFactory.MultiProperty;
 import com.android.launcher3.util.MultiValueAlpha;
 import com.android.launcher3.util.NavigationMode;
+import com.android.launcher3.util.VibratorWrapper;
 import com.android.quickstep.TaskOverlayFactory.OverlayUICallbacks;
 import com.android.quickstep.util.LayoutUtils;
 
@@ -162,6 +163,7 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         if (mCallbacks == null) {
             return;
         }
+        VibratorWrapper.INSTANCE.get(getContext()).vibrate(VibratorWrapper.EFFECT_CLICK);
         int id = view.getId();
         if (id == R.id.action_screenshot) {
             mCallbacks.onScreenshot();
