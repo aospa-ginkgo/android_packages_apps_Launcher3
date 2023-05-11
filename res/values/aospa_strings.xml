@@ -75,6 +75,10 @@
     <string name="hide_top_shadow_title">Hide top shadow</string>
     <string name="hide_top_shadow_summary">Remove shadow underneath the status bar</string>
 
+    <!-- Force monochrome icons -->
+    <string name="pref_force_monochrome_themed_icons_title">Force themed icons</string>
+    <string name="pref_force_monochrome_themed_icons_summary">Generate themed icon for apps that do not have one (requires re-toggling of themed icons)</string>
+
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">by default</string>
